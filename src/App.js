@@ -10,10 +10,11 @@ import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 import Login from "./pages/components/Login";
 import AdminUser from "./pages/components/AdminUser";
+import { ButtonProvider } from "./Context/buttonContext";
 
 const App = () => {
   return (
-    <>
+    <ButtonProvider>
       <Navbar />
       <Routes>
         <Route
@@ -35,7 +36,7 @@ const App = () => {
         <Route exact path="/admin/login" element={<Login />} />
         <Route exact path="/user-backend" element={<AdminUser />} />
       </Routes>
-    </>
+    </ButtonProvider>
   );
 };
 

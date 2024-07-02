@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import SvgBackground from "./components/SvgBackground";
 import "./Frontpage.css";
 import TypeWriterEffect from "react-typewriter-effect";
+import { ButtonContext } from "../Context/buttonContext";
 
 function Frontpage() {
+const {setBtnClick} = useContext(ButtonContext)
   return (
     <>
       <div className="profile-container" id="home_page">
@@ -42,13 +44,11 @@ function Frontpage() {
                   LOOKING FORWARD TO WORKING WITH YOU. :)
                 </span>
               </span>
-              <div className="colz">{/* <SocialMediaLinks /> */}</div>
             </div>
 
             <div className="profile-options">
               <a href="#contact_page">
-                <button className="btn primary-btn">
-                  {" "}
+                <button className="btn primary-btn" onClick={() => {setBtnClick(5)}}>
                   <h3>Hire Me</h3>
                 </button>
               </a>
@@ -59,7 +59,7 @@ function Frontpage() {
               </a>
             </div>
           </div>
-          <div className="profile-picture">
+          <div className="profile-picture" onClick={() => {setBtnClick(1)}}>
             <a href="#about_myself" className="profile-picture-background"></a>
           </div>
         </div>

@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 import 'font-awesome/css/font-awesome.min.css';
 import my_navbar_data from './assets/NavData';
 import nav_logo from '../Image/Profile_imgs/nav_logo.png';
+import { ButtonContext } from '../Context/buttonContext';
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
   const [isbtnActive, setBtnActive] = useState(false);
-  const [isBtnClick, setBtnClick] = useState(0);
+  const { isBtnClick, setBtnClick } = useContext(ButtonContext);
 
-  const handleClick = (index) => {
+  const handleClick = () => {
     setActive(!isActive);
     setBtnActive(!isbtnActive);
   };
