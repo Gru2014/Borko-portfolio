@@ -39,8 +39,8 @@ function Education() {
         <div>
           {my_education_data.map((data, index) => {
             return (
-              <div className="educ_div_section">
-                <div className="educ_upper_section" key={index}>
+              <div className="educ_div_section" key={index}>
+                <div className="educ_upper_section">
                   <div className="educ_container_one">
                     <img src={data.education_img_link} alt="educ_image" />
                   </div>

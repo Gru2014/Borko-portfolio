@@ -16,6 +16,7 @@ function Skills() {
       info: "⚡Blockchain development using Solidity and Rust",
     },
   ];
+  
   return (
     <>
       <section id="my_skill">

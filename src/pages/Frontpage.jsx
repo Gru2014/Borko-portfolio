@@ -5,7 +5,8 @@ import TypeWriterEffect from "react-typewriter-effect";
 import { ButtonContext } from "../Context/buttonContext";
 
 function Frontpage() {
-const {setBtnClick} = useContext(ButtonContext)
+  const { setBtnClick } = useContext(ButtonContext);
+
   return (
     <>
       <div className="profile-container" id="home_page">
@@ -26,7 +27,7 @@ const {setBtnClick} = useContext(ButtonContext)
                       multiTextLoop
                       cursorColor="#f3f4f6"
                       multiText={[
-                        "Senior Software engineer",
+                        "Senior Software Engineer",
                         "Fullstack Engineer",
                         "Frontend Engineer",
                         "Backend Engineer",
@@ -37,10 +38,12 @@ const {setBtnClick} = useContext(ButtonContext)
                   </span>
                 </h1>
                 <span className="profile-role-tagline">
-                  I've been working as a software engineer for more than 9 years until now.<br></br>
-                  I'm self-motivated and open-minded person who can learn very fast.<br></br>
-                  I have a lot of experience with the tect stacks that you are looking for.<br></br>
-                  I think I'm suitable for this position.<br></br>
+                  I've been working as a software engineer for more than 9 years
+                  until now.<br></br>
+                  I'm self-motivated and open-minded person who can learn very
+                  fast.<br></br>I have a lot of experience with the tect stacks
+                  that you are looking for.<br></br>I think I'm suitable for
+                  this position.<br></br>
                   LOOKING FORWARD TO WORKING WITH YOU. :)
                 </span>
               </span>
@@ -48,7 +51,12 @@ const {setBtnClick} = useContext(ButtonContext)
 
             <div className="profile-options">
               <a href="#contact_page">
-                <button className="btn primary-btn" onClick={() => {setBtnClick(5)}}>
+                <button
+                  className="btn primary-btn"
+                  onClick={() => {
+                    setBtnClick(5);
+                  }}
+                >
                   <h3>Hire Me</h3>
                 </button>
               </a>
@@ -59,7 +67,12 @@ const {setBtnClick} = useContext(ButtonContext)
               </a>
             </div>
           </div>
-          <div className="profile-picture" onClick={() => {setBtnClick(1)}}>
+          <div
+            className="profile-picture"
+            onClick={() => {
+              setBtnClick(1);
+            }}
+          >
             <a href="#about_myself" className="profile-picture-background"></a>
           </div>
         </div>
