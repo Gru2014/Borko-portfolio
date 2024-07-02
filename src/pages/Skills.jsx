@@ -9,11 +9,11 @@ function Skills() {
     },
     {
       index: 2,
-      info: "⚡Developing mobile applications using React JS , Node JS and Material UI ",
+      info: "⚡Developing mobile applications using React Native , Node JS and Material UI ",
     },
     {
       index: 3,
-      info: "⚡ Creating application backend in Node JS & Express JS",
+      info: "⚡Blockchain development using Solidity and Rust",
     },
   ];
   return (
