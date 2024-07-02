@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <div className="nav-container">
-        <div className="logo">
+        <div className="logo" onClick={setBtnClick(0)}>
           <HashLink to="/#home_page" className="nav__logo">
             <img src={nav_logo} alt="logo" />
           </HashLink>
