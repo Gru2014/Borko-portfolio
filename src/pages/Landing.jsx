@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Frontpage from "./Frontpage";
 import About from "./About";
 import Skills from "./Skills";
@@ -9,14 +9,14 @@ import Contact from "./Contact";
 const Landing = () => {
 
   return (
-    <div>
+    <>
       <Frontpage />
       <About />
       <Skills />
       <EducationCert />
       <Project_exp />
       <Contact />
-    </div>
+    </>
   );
 };
 

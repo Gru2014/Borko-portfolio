@@ -26,8 +26,8 @@ function About() {
           <div className="personal_info">
             {personal_info_data.map((data, index) => {
               return (
-                <div key={index}>
-                  <div className="abc" >
+                <>
+                  <div className="abc">
                     {data.section_one.map((e, index) => {
                       return (
                         <h4 key={index}>
@@ -45,7 +45,7 @@ function About() {
                       );
                     })}
                   </div>
-                </div>
+                </>
               );
             })}
           </div>

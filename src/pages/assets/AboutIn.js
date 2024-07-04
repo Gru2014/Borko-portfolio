@@ -15,7 +15,7 @@ const personal_info_data = [
       {
         index: 3,
         data_type: "Languages",
-        data_value: "English, Japanese",
+        data_value: "English",
       },
     ],
     section_two: [
