@@ -15,7 +15,7 @@ const BottomNav = () => {
               to="/admin/login"
               style={{ textDecoration: "none", color: "#fff" }}
             >
-              <h3>Borko | Portfolio</h3>
+              <h3>Darren | Portfolio</h3>
             </HashLink>
           </div>
           <div className="bot_middle_info">

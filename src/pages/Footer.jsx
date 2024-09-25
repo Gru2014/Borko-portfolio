@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer_section">
         <BottomNav />
         <div className="line"></div>
-        <h2>{new Date().getFullYear()} &copy; All Reversed, Borko</h2>
+        <h2>{new Date().getFullYear()} &copy; All Reversed, Darren</h2>
       </div>
     </div>
   );
