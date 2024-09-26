@@ -6,10 +6,10 @@ import interview_img from '../../Image/proj_imgs/interview.png';
 const proj_data = [
   {
     id: 1,
-    project_name: 'Smart Inventory',
+    project_name: 'Zeme',
     proj_creation_date: 'Nov 2022',
     project_image: smart_inventory_img,
-    proj_live_link: 'https://smartinventory.in/',
+    proj_live_link: 'https://zeme.io',
   },
   {
     id: 2,
